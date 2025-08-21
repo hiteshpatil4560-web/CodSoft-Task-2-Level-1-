@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROLEX Watches - Timeless Luxury</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif;}
+    body {background-color: #fdfdfd; color: #111;}
+
+    /* Navigation */
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: fixed; width: 100%; z-index: 1000;
+    }
+    .nav-container {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 5%; max-width: 1400px; margin: 0 auto;
+    }
+    .logo {
+      font-size: 32px; font-weight: 800; color: #006039;
+      letter-spacing: 2px; font-family: serif;
+    }
+    .nav-links {display: flex; gap: 30px;}
+    .nav-links a {
+      text-decoration: none; color: #333; font-weight: 500; transition: 0.3s;
+    }
+    .nav-links a:hover {color: #006039;}
+    .cta-button {
+      background-color: #006039; color: white; border: none;
+      padding: 10px 22px; border-radius: 25px; font-weight: 600;
+      cursor: pointer; transition: background-color 0.3s;
+    }
+    .cta-button:hover {background-color: #004d2f;}
+
+    /* Hero */
+    .hero {
+      padding-top: 100px; display: flex; align-items: center;
+      min-height: 90vh; background: linear-gradient(135deg,#fff,#e5f0eb);
+    }
+    .hero-container {
+      display: flex; justify-content: space-between; align-items: center;
+      max-width: 1400px; margin: 0 auto; padding: 0 5%; width: 100%;
+    }
+    .hero-content {flex: 1; max-width: 600px;}
+    .hero-title {font-size: 52px; margin-bottom: 20px; color: #111;}
+    .hero-subtitle {font-size: 18px; color: #444; margin-bottom: 30px; line-height: 1.6;}
+    .hero-image {flex: 1; display: flex; justify-content: center;}
+    .hero-image img {
+      max-width: 50%; height: auto; border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0,96,57,0.25);
+    }
+
+    /* Products */
+    .products {padding: 80px 5%; background-color: #fff;}
+    .section-title {
+      text-align: center; font-size: 36px; margin-bottom: 60px; color: #111;
+    }
+    .product-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 30px; max-width: 1400px; margin: 0 auto;
+    }
+    .product-card {
+      background-color: #fff; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15);}
+    .product-image {height: 300px; overflow: hidden;}
+    .product-image img {
+      width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;
+    }
+    .product-card:hover .product-image img {transform: scale(1.05);}
+    .product-info {padding: 20px; text-align: center;}
+    .product-name {font-size: 20px; margin-bottom: 10px; color: #111;}
+    .product-price {font-size: 18px; color: #006039; font-weight: 600;}
+
+    /* Features */
+    .features {padding: 80px 5%; background-color: #e5f0eb;}
+    .feature-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+      gap: 40px; max-width: 1200px; margin: 0 auto;
+    }
+    .feature-card {text-align: center; padding: 30px;}
+    .feature-icon {
+      font-size: 40px; margin-bottom: 20px; color: #006039;
+    }
+    .feature-title {font-size: 22px; margin-bottom: 15px; color: #111;}
+    .feature-desc {color: #444; line-height: 1.6;}
+
+    /* Footer */
+    footer {background-color: #111; color: #ddd; padding: 50px 5%;}
+    .footer-container {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 40px; max-width: 1400px; margin: 0 auto;
+    }
+    .footer-column h3 {font-size: 18px; margin-bottom: 20px; color: #006039;}
+    .footer-links {list-style: none;}
+    .footer-links li {margin-bottom: 10px;}
+    .footer-links a {color: #bbb; text-decoration: none; transition: 0.3s;}
+    .footer-links a:hover {color: #fff;}
+    .copyright {
+      text-align: center; padding-top: 30px; margin-top: 30px;
+      border-top: 1px solid #444; color: #777; font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {display: none;}
+      .hero-container {flex-direction: column;}
+      .hero-content {margin-bottom: 40px; text-align: center;}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">ROLEX</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Watches</a>
+        <a href="#">Heritage</a>
+        <a href="#">Boutiques</a>
+        <a href="#">Contact</a>
+      </div>
+      <button class="cta-button">Explore</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Timeless Luxury, ROLEX</h1>
+        <p class="hero-subtitle">Discover The Elegance of Swiss Craftsmanship. Each ROLEX Watch is an Icon of Precision, Performance, and Prestige.</p>
+        <button class="cta-button">View Collection</button>
+      </div>
+      <div class="hero-image">
+        <img src="rologo.png" alt="Rolex Watch"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h2 class="section-title">Our Best Sellers</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="rolex4.webp" alt="Rolex GMT-Master II">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">GMT-Master II</h3>
+          <p class="product-price">Rs.26,18,054</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://content.rolex.com/dam/2022/upright-bba-with-shadow/m126610ln-0001.png?imwidth=420" alt="Rolex Submariner">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Submariner Date</h3>
+          <p class="product-price">Rs.54,26,550</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://content.rolex.com/dam/2022/upright-bba-with-shadow/m126300-0001.png?imwidth=420" alt="Rolex Datejust 41">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Datejust 41</h3>
+          <p class="product-price">Rs.80,40,999</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://content.rolex.com/dam/2022/upright-bba-with-shadow/m228238-0006.png?imwidth=420" alt="Rolex Day-Date 40">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Day-Date 40</h3>
+          <p class="product-price">Rs.1,70,50,500</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <h2 class="section-title">Why Choose ROLEX</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⌚</div>
+        <h3 class="feature-title">Swiss Craftsmanship</h3>
+        <p class="feature-desc">Each Rolex watch is meticulously crafted in Switzerland, blending tradition with innovation.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌊</div>
+        <h3 class="feature-title">Water Resistant</h3>
+        <p class="feature-desc">Engineered for performance, our watches maintain precision even under water.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💎</div>
+        <h3 class="feature-title">Luxury Materials</h3>
+        <p class="feature-desc">Crafted from gold, platinum, and Oystersteel, Rolex watches are a symbol of elegance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>ROLEX</h3>
+        <p>The symbol of excellence in watchmaking since 1905.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Watches</a></li>
+          <li><a href="#">Heritage</a></li>
+          <li><a href="#">Boutiques</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul class="footer-links">
+          <li>info@rolex.com</li>
+          <li>+41 22 302 22 00</li>
+          <li>Geneva, Switzerland</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Rolex Watches. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
